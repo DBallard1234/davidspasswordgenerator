@@ -8,7 +8,8 @@ var special = ["!", "#", "$", "%", "&", "(", ")", "*", "+", ",", "-", ".", "/", 
 var generateBtn = document.querySelector("#generate"); 
 
 //Function to ask user questions about the criteria the generator needs to follow
-function questions() {
+function questions() { 
+  var isValid = false;
   do{
     var length = prompt("Choose a password length. Length must be between 8 and 128 characters."); 
     var LowerCaseQuestion = confirm("Do you want the password to contain lower case letters?");
